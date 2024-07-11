@@ -1,10 +1,19 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+/* styles.css */
+body, h1, p {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
+/* Navigation bar styles */
 nav {
     background-color: #333;
     color: #fff;
@@ -21,6 +30,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    position: relative; /* Add this line for dropdown positioning */
 }
 
 nav ul li a {
@@ -33,11 +43,27 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Dropdown menu styles */
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555; /* Customize dropdown background color */
+    padding: 10px;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Main content styles */
 .content {
     padding: 20px;
     text-align: center;
 }
 
+/* Form styles */
 form {
     margin: 0 auto;
     width: 300px;
@@ -62,6 +88,7 @@ button:hover {
     background-color: #555;
 }
 
+/* Heading and paragraph styles */
 h1 {
     color: #333;
 }
