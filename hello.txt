@@ -1,2 +1,0 @@
-This is test file which test successful setup of git and github in ubuntu 
-as i switch from window to ubuntu	
